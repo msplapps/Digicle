@@ -35,7 +35,7 @@
 		<div class="row">
 			
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="navbar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -51,20 +51,78 @@
 					<li><a href="#team">Team</a></li>
 					<li><a href="#aboutus">About Us</a></li>
 					<li><a href="#getintouch">Get in touch</a></li>
-					<li class="social_media">
+                    <li class="social_media">
 						<ul class="clearfix">
-							<li class="fb no_bdr"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+							<li class="fb no_bdr"><a href="https://www.facebook.com/digicletech/" target="_blank" title="facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li class="tw"><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
 							<li class="ln"><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
 						</ul>
 					</li>
 				</ul>
 			</div>
-
 		</div>
 		</div>
 		</nav>
+
+        <div class="touchpopup">
+		<form>
+		    <div><span class="get_text2">Get A Quote</span><span class="close" >×</span></div>
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-user " aria-hidden="true"></i></span>
+			    <input type="text" id="fname" name="fname" class="form-control" placeholder="Your Name">
+			</div>
+			<div class="input-group">
+			    <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+		 	    <input type="phone" id="fphone" name="fphone"  class="form-control" placeholder="Phone Number">
+		    </div>
+		    <div class="input-group">
+		    	<span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+			    <input type="Email" id="femail" name="femail" class="form-control" placeholder="Email">
+		    </div>
+		    <div class="input-group">
+		    	<span class="input-group-addon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+				<select name="project_type" id="ftech" name="ftech" class="form-control">
+		            <option value="Project Type">Project Type</option>
+		            <option value="iPhone App Development">iPhone App Development</option>
+		            <option value="Android App Development">Android App Development</option>
+		            <option value="Cross Platform Apps">Learning Management System</option>
+		            <option value="Windows App Development">Digital Marketing</option>
+		            <option value="Mobile Website Design">Mobile Website Design</option>
+		            <option value="Web Application">Web Application</option>
+		            <option value="Mobile App With Website Development">Website Development</option>
+		            <option value="Maintenance &nbsp;and support">Maintenance &nbsp;and support</option>
+		            <option value="general query">Web Hosting</option>
+		            <option value="Others">Others</option>
+	            </select>
+            </div>
+            <div class="input-group">
+            	<span class="input-group-addon"><i class="fa fa-money" aria-hidden="true"></i></span>
+                <select name="sel_range" id="fprice" name="fprice" class="form-control">
+	                <option value="Budget">Budget</option>
+	                <option value="$2,000 to $5,000">$2,000 to $5,000</option>
+	                <option value="$5,000 to $10,000">$5,000 to $10,000</option>
+	                <option value="$10,000 to $25,000">$10,000 to $25,000</option>
+	                <option value="$25,000 to $50,000">$25,000 to $50,000</option>
+	                <option value="Over $50,000">Over $50,000</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+            	<span class="input-group-addon"><i class="fa fa-commenting" aria-hidden="true"></i></span>
+			    <textarea rows="" cols="" id="fmsg" name="fmsg" class="form-control" placeholder="Share Your Requirements"></textarea>
+			</div>
+			<div class="input-group">
+			    <button type="button" id="order_btn" class="btn btn-primary">Submit</button><br>
+			</div>
+			<div class="input-group">
+				<span class="errS1"></span>
+				<span class="f_success1"></span>
+			</div>
+
+		</form>
+		</div>
 	</header>
+    	
 
 	<!-- Banner -->
 	<div id="myCarousel" class="banner carousel slide" data-ride="carousel" data-interval="false"> <!--  data-interval="false" -->
@@ -83,6 +141,7 @@
 					<div class="left col-sm-6">
 						<h1>Web Design</h1>
 						<p>Good design is based on thorough research and yields tangible results. Our interactive designs are developed to offer visual appeal, ROI, user friendliness and superb functionality too.</p>
+						<img src="images/requestquote.png" class="get_text"> 
 					</div>
 					<div class="right col-sm-6">
 						<figure><img class="img-responsive" src="images/banner_img-1.png" alt="Banner Image"></figure>
@@ -96,10 +155,12 @@
 				<div class="row clearfix">
 					<div class="right col-sm-6">
 						<figure><img class="img-responsive" src="images/banner_img-3.png" alt="Banner Image"></figure>
+						<img src="images/requestquote.png" class="get_text">
 					</div>
 					<div class="left col-sm-6">
 						<h1>Web Services</h1>
 						<p>As a full service digital agency we can offer you comprehensive and creative online solutions to help your business grow.</p>
+						
 					</div>
 				</div>
 				</div>
@@ -117,40 +178,65 @@
 
 			<ul class="clearfix">
 				<li class="col-sm-4 col-xs-6">
-					<a href="#">
+					<div>
 						<figure><i class="fa fa-file-code-o" aria-hidden="true"></i></figure>
 						<h4 class="ssb-title">WEB DESIGNING</h4>
-					</a>
+						<p>we develop designs which stay in the mind of your customers</p>
+						<ul>
+							<li><p>Html5</p></li>
+							<li><p>Css3</span></li>
+							<li><p>Jquery,Javascript</p></li>
+							<li><p>Responsive Web designing</p></li>
+						</ul>
+					</div>
 				</li>
 				<li class="col-sm-4 col-xs-6">
-					<a href="#">
+					<div>
+						<figure><i class="fa fa-desktop" aria-hidden="true"></i></figure>
+						<h4 class="ssb-title">WEB DEVELOPMENT</h4>
+						<p>Kick Start Your Business With Highly Interactive Web Applications</p>
+						<ul>
+							<li><p>PHP Web Development</p></li>
+							<li><p>Web Applications</p></li>
+						</ul>
+					</div>
+				</li>
+				<li class="col-sm-4 col-xs-6">
+					<div>
 						<figure><i class="fa fa-mobile" aria-hidden="true"></i></figure>
 						<h4 class="ssb-title">MOBILE APPS</h4>
-					</a>
+						<p>Turn your app idea into business and generate revenue</p>
+						<ul>
+							<li><p>iOS Apps</p></li>
+							<li><p>Android Apps</p></li>
+						</ul>
+					</div>
 				</li>
 				<li class="col-sm-4 col-xs-6">
-					<a href="#">
+					<div>
 						<figure><i class="fa fa-bullhorn" aria-hidden="true"></i></figure>
 						<h4 class="ssb-title">DIGITAL MARKETING</h4>
-					</a>
+						<p>Take the lead of online space with SEO services.</p>
+						<ul>
+							<li><p>Social media marketing</p></li>
+							<li><p>Search engine marketing</p></li>
+							<li><p>Social engine optimization</p></li>
+						</ul>
+					</div>
 				</li>
 				<li class="col-sm-4 col-xs-6">
-					<a href="#">
+					<div>
 						<figure><i class="fa fa-cog" aria-hidden="true"></i></figure>
 						<h4 class="ssb-title">LMS</h4>
-					</a>
+						<p>LMS stands short for Learning Management System. Because you use it to deliver education courses or training programs.</p>
+					</div>
 				</li>
 				<li class="col-sm-4 col-xs-6">
-					<a href="#">
-						<figure><i class="fa fa-bullseye" aria-hidden="true"></i></figure>
-						<h4 class="ssb-title">SMO</h4>
-					</a>
-				</li>
-				<li class="col-sm-4 col-xs-6">
-					<a href="#">
+					<div>
 						<figure><i class="fa fa-server" aria-hidden="true"></i></figure>
 						<h4 class="ssb-title">HOSTING</h4>
-					</a>
+						<p> Build your website or application on a firm foundation. We identify the best and most cost-effective hosting solutions for your business. Whether you’re a new venture or simply need a change, talk to us to get the best solution implemented for your business.</p>
+					<div>
 				</li>
 			</ul>
 		</div>
@@ -172,49 +258,58 @@
 	<div class="tz-gallery">
 	<div class="container-fluid">
 		<div class="row clearfix">
-		<div class="col-xs-12 col-sm-3">
-	        <a class="lightbox" href="https://demo.tutorialzine.com/2017/02/freebie-4-bootstrap-gallery-templates/images/bridge.jpg">
-	            <img src="https://demo.tutorialzine.com/2017/02/freebie-4-bootstrap-gallery-templates/images/bridge.jpg" alt="Bridge">
-	        </a>
-	    </div>
-	    <div class="col-xs-6 col-sm-3 ">
-	        <a class="lightbox" href="https://demo.tutorialzine.com/2017/02/freebie-4-bootstrap-gallery-templates/images/park.jpg">
-	            <img src="https://demo.tutorialzine.com/2017/02/freebie-4-bootstrap-gallery-templates/images/park.jpg" alt="Park">
+		
+	    <div class="col-xs-6 col-sm-3">
+	        <a class="lightbox" href="http://illuminatiindia.com/" target="_blank" title="Illuminati">
+	            <img class="img-responsive" src="images/illumunatiindia.jpg" alt="Illuminati">
+	            <span>Illuminati</span>
 	        </a>
 	    </div>
 	    <div class="col-xs-6 col-sm-3">
-	        <a class="lightbox" href="https://demo.tutorialzine.com/2017/02/freebie-4-bootstrap-gallery-templates/images/tunnel.jpg">
-	            <img src="https://demo.tutorialzine.com/2017/02/freebie-4-bootstrap-gallery-templates/images/tunnel.jpg" alt="Tunnel">
+	        <a class="lightbox" href="https://revio.in/" target="_blank" title="Revio App">
+	            <img src="images/gallery-2.jpg" alt="Revio App" class="img-responsive">
+	            <span>Revio App</span>
 	        </a>
 	    </div>
-	    <div class="col-xs-12 col-sm-3">
-	        <a class="lightbox" href="https://demo.tutorialzine.com/2017/02/freebie-4-bootstrap-gallery-templates/images/traffic.jpg">
-	            <img src="https://demo.tutorialzine.com/2017/02/freebie-4-bootstrap-gallery-templates/images/traffic.jpg" alt="Traffic">
+	     <div class="col-xs-6 col-sm-3">
+	        <a class="lightbox" href="https://www.vistarooms.com" target="_blank" title="Vistarooms">
+	            <img class="img-responsive" src="images/Vista rooms.png" alt="Vistarooms">
+	            <span>Vistarooms</span>
 	        </a>
 	    </div>
-	    <div class="col-xs-6 col-sm-6">
-	        <a class="lightbox" href="https://demo.tutorialzine.com/2017/02/freebie-4-bootstrap-gallery-templates/images/coast.jpg">
-	            <img src="https://demo.tutorialzine.com/2017/02/freebie-4-bootstrap-gallery-templates/images/coast.jpg" alt="Coast">
-	        </a>
-	    </div> 
-	    <div class="col-xs-6 col-sm-3 ">
-	        <a class="lightbox" href="https://demo.tutorialzine.com/2017/02/freebie-4-bootstrap-gallery-templates/images/rails.jpg">
-	            <img src="https://demo.tutorialzine.com/2017/02/freebie-4-bootstrap-gallery-templates/images/rails.jpg" alt="Rails">
+	     <div class="col-xs-6 col-sm-3">
+	        <a class="lightbox" href="http://vaayuoceanadventures.in" target="_blank" title="Vaayu">
+	            <img class="img-responsive" src="images/Vaayuoceanadventure.jpg" alt="Vaayu">
+	            <span>Vaayu</span>
 	        </a>
 	    </div>
-	    <div class="col-xs-12 col-sm-3">
-	        <a class="lightbox" href="https://demo.tutorialzine.com/2017/02/freebie-4-bootstrap-gallery-templates/images/bridge.jpg">
-	            <img src="https://demo.tutorialzine.com/2017/02/freebie-4-bootstrap-gallery-templates/images/bridge.jpg" alt="Bridge">
+	    <div class="col-xs-12 col-sm-6">
+	        <a class="lightbox" href="http://peakcentreacademy.ca/" target="_blank" title="Peak Center">
+	            <img src="images/gallery-1.jpg" alt="Peak Center" class="img-responsive">
+	            <span>Peak Center</span>
 	        </a>
 	    </div>
-	    <div class="col-xs-6 col-sm-3 ">
-	        <a class="lightbox" href="https://demo.tutorialzine.com/2017/02/freebie-4-bootstrap-gallery-templates/images/bridge.jpg">
-	            <img src="https://demo.tutorialzine.com/2017/02/freebie-4-bootstrap-gallery-templates/images/bridge.jpg" alt="Bridge">
+	    <div class="col-xs-6 col-sm-3">
+	        <a class="lightbox" href="http://ice-global.net" target="_blank" title="Ice Global">
+	            <img class="img-responsive" src="images/ice-global.jpg" alt="IceGlobal">
+	            <span>Ice Global</span>
 	        </a>
 	    </div>
-	    <div class="col-xs-6 col-sm-3 ">
-	        <a class="lightbox" href="https://demo.tutorialzine.com/2017/02/freebie-4-bootstrap-gallery-templates/images/bridge.jpg">
-	            <img src="https://demo.tutorialzine.com/2017/02/freebie-4-bootstrap-gallery-templates/images/bridge.jpg" alt="Bridge">
+	    <div class="col-xs-6 col-sm-3">
+	        <a class="lightbox" href="https://kanataacademy.com" target="_blank" title="Kanata Academy">
+	            <img class="img-responsive" src="images/kanata.jpg" alt="Kanata Academy">
+	        </a>
+	    </div>
+	    <div class="col-xs-6 col-sm-3">
+	        <a class="lightbox"  href="http://www.rorymcilroy.com/" target="_blank" title="rorymcilroy" >
+               <img src="images/rory.jpg" class="img-responsive"  alt="rory-img" >
+               <span>rorymcilroy</span>
+	        </a>
+	    </div>
+	     <div class="col-xs-6 col-sm-3">
+	        <a class="lightbox" href="http://www.djhtutoring.com/" target="_blank" title="School of Learning">
+	            <img class="img-responsive" src="images/school.jpg" alt=" School of Learning">
+	            <span>School of Learning</span>
 	        </a>
 	    </div>
 		</div>
@@ -362,13 +457,13 @@
 
             <div class="col-sm-5 col-xs-12">
                 <div class="avatar">
-                    <img src="http://www.languagesim.com/wp-content/uploads/2015/06/24-hour-translation-services-certified.png" class="thumbnail" alt="image">
+                    <img src="images/kartheek.jpg" class="thumbnail" alt="team-image">
                 </div>
             </div>
 
             <div class="col-sm-7 col-xs-12">
-                <h4><strong>John Doe</strong></h4>
-                <h6>Web Designer</h6>
+                <h4><strong>karthik</strong></h4>
+                <h6>Digital Marketing</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
 
                 <!--Facebook-->
@@ -384,35 +479,12 @@
         <div class="team_member col-xs-6">
             <div class="col-sm-5 col-xs-12">
                 <div class="avatar">
-                    <img src="http://www.languagesim.com/wp-content/uploads/2015/06/24-hour-translation-services-certified.png" class="thumbnail" alt="image">
+                    <img src="images/placeholder.png" class="thumbnail" alt="team-image">
                 </div>
             </div>
 
             <div class="col-sm-7 col-xs-12">
-                <h4><strong>Maria Kate</strong></h4>
-                <h6>Photographer</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
-
-                <!--Facebook-->
-                <a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
-                <!--Twitter-->
-                <a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a>
-                <!--Google +-->
-                <a href="#" class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a>
-            </div>
-        </div>
-
-        <!--Grid column-->
-        <div class="team_member col-xs-6">
-
-            <div class="col-sm-5 col-xs-12">
-                <div class="avatar">
-                    <img src="http://www.languagesim.com/wp-content/uploads/2015/06/24-hour-translation-services-certified.png" class="thumbnail" alt="image">
-                </div>
-            </div>
-
-            <div class="col-sm-7 col-xs-12">
-                <h4><strong>Anna Deynah</strong></h4>
+                <h4><strong>Developer</strong></h4>
                 <h6>Web Developer</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
 
@@ -423,6 +495,29 @@
                 <!--Google +-->
                 <a href="#" class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a>
             </div>
+        </div>
+
+        <!--Grid column-->
+        <div class="team_member col-xs-6">
+
+            <div class="col-sm-5 col-xs-12">
+                <div class="avatar">
+                    <img src="images/reddy.jpg" class="thumbnail" alt="team-image">
+                </div>
+            </div>
+
+            <div class="col-sm-7 col-xs-12">
+                <h4><strong>Purushotham Reddy</strong></h4>
+                <h6>IOS App Developer</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+
+                <!--Facebook-->
+                <a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+                <!--Twitter-->
+                <a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a>
+                <!--Google +-->
+                <a href="#" class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a>
+            </div>
 
         </div>
 
@@ -430,13 +525,13 @@
         <div class="team_member col-xs-6">
             <div class="col-sm-5 col-xs-12">
                 <div class="avatar">
-                    <img src="http://www.languagesim.com/wp-content/uploads/2015/06/24-hour-translation-services-certified.png" class="thumbnail" alt="image">
+                    <img src="images/toby.jpg" class="thumbnail" alt="team-image">
                 </div>
             </div>
 
             <div class="col-sm-7 col-xs-12">
-                <h4><strong>Sarah Melyah</strong></h4>
-                <h6>Front-end Developer</h6>
+                <h4><strong>Toby Kurian</strong></h4>
+                <h6>Android App Developer</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
 
                 <!--Facebook-->
@@ -471,7 +566,7 @@ We are driven by our passion for excellence, commitment to innovation and the mo
 	    </div>
 	    <div class="col-sm-4">
 	    	<figure>
-	    		<img src="http://www.codeworksltd.com/image/about_img-4.jpg" class="img-thumbnail" alt="About Culture">
+	    		<img src="images/abt1.jpg" class="img-thumbnail" alt="About Culture">
 	    	</figure>
 	    </div>
 	    <div class="clearfix"></div>
@@ -484,7 +579,7 @@ We are driven by our passion for excellence, commitment to innovation and the mo
 	    </div>
 	    <div class="col-sm-4 pull-left">
 	    	<figure>
-	    		<img src="http://www.codeworksltd.com/image/culture_image.jpeg" class="img-thumbnail" alt="About Approach">
+	    		<img src="images/abt2.jpg" class="img-thumbnail" alt="About Approach">
 	    	</figure>
 	    </div>
 	    <div class="clearfix"></div>
@@ -499,13 +594,13 @@ We are driven by our passion for excellence, commitment to innovation and the mo
 	<!-- Get In touch -->
 	<section class="getintouch overlay_bg">
 		<span id="getintouch"></span>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.447453885178!2d78.38475861544363!3d17.486141088019508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9189805eaaa3%3A0x97217092c3b078f7!2sKarnataka+Bank+Ltd!5e0!3m2!1sen!2sin!4v1507990041617"></iframe>
+		
 		<div class="container">
-		<div class="row">
+		<div class="row clearfix"">
 			<h2 class="title"><strong>Get In Touch</strong></h2>
 			<p>&nbsp;</p>
-			<form class="row-eq-height clearfix">
-				<div class="col-xs-12">
+			<form>
+				<div class="col-md-6 touch_form">
 					<div class="form-group">
 						<label for="name">First Name:</label>
 						<input type="text" class="form-control" id="name" required="">
@@ -518,14 +613,39 @@ We are driven by our passion for excellence, commitment to innovation and the mo
 						<label for="phone">Phone Number:</label>
 						<input type="text" class="form-control" id="phone" required="">
 					</div>
+
 					<div class="form-group">
 						<label for="message">Message:</label>
 						<textarea class="form-control" rows="5" cols="5" id="message" required=""></textarea>
 					</div>
+					
 					<span class="errS"></span>
 					<span class="f_success"></span>
 					<div class="form-group">
 						<button type="button" class="btn btn-primary btn-lg submit">Submit</button>
+					</div>
+					
+				</div>
+
+				<div class="address col-md-6 col-xs-12 hidden-xs hidden-sm">
+					<div class="col-sm-6 no_pad">
+						<h5>Head Office:</h5>
+						<p>D314, Neelkanth Business Park,
+						Vidyavihar station skywalk,
+						Vidyavihar West, Mumbai,
+						Maharashtra 400086, India</p>
+					</div>
+					<div class="col-sm-6">
+						<h5>Hyderabad Office:</h5>
+						<p>Plot No.302, Prathima Arcade,
+						kphb colony near Forum Mall,
+						Hyderabad,Telangana
+						500072, India</p>
+					</div>
+					<div class="clearfix"></div>
+
+					<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1902.7240673731774!2d78.38618696652037!3d17.486108547837095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91898014b04d%3A0xe51cb27caabec6ff!2zMTfCsDI5JzEwLjMiTiA3OMKwMjMnMTMuMSJF!5e0!3m2!1sen!2sin!4v1509433506131"></iframe>
 					</div>
 				</div>
 			</form>
@@ -534,29 +654,27 @@ We are driven by our passion for excellence, commitment to innovation and the mo
 	</section>
 
 
-	<!-- Footer push div -->
 	<div class="push"></div>
-
-
 </div>
 <!-- Wrapper -->
-<footer>
-	<div class="container">
-	<div class="row">
-		<a href="#" class="logo"><img class="img-responsive" src="images/logo.png" alt="logo"></a>
 
-		<ul class="pull-right visible-xs clearfix ">
-			<li class="social_media">
-				<ul class="clearfix">
-					<li class="fb no_bdr"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-					<li class="tw"><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-					<li class="ln"><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-				</ul>
-			</li>
-		</ul>
-		<p class="hvr-underline-from-center">Copyright @2017 <a href="#">Digicle.com</a></p>
-	</div>
-	</div>
+<footer>
+ <div class="container">
+ <div class="row">
+  <a href="#top" class="logo"><img class="img-responsive" src="images/logo.png" alt="logo"></a>
+
+  <ul class="pull-right visible-xs clearfix ">
+   <li class="social_media">
+    <ul class="clearfix">
+     <li class="fb no_bdr"><a href="https://www.facebook.com/digicletech/" target="_blank" title="facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+     <li class="tw"><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+     <li class="ln"><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+    </ul>
+   </li>
+  </ul>
+  <p class="hvr-underline-from-center">Copyright @2017 <a href="#">Digicle.com</a></p>
+ </div>
+ </div>
 </footer>
 
 
@@ -565,11 +683,6 @@ We are driven by our passion for excellence, commitment to innovation and the mo
 <script src="js/bootstrap.min.js"></script>
 <script src="js/custom_script.js"></script>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-<script>
-    baguetteBox.run('.tz-gallery');
-</script>
 
 </body>
 </html>
